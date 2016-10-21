@@ -24,16 +24,16 @@ extension Entity {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }
-    
-    public class func getFetchedResults() -> NSArray {
+
+    public class func fetchedData() -> NSArray {
         let fetchRequest: NSFetchRequest<Entity> = Entity.fetchRequest()
         
-        do {
+        do {            
             //go get the results
             let searchResults = try getContext().fetch(fetchRequest)
             //I like to check the size of the returned results!
             
-            return ManagedParser.convertToArray(managedObjects: searchResults as NSArray?)
+            return searchResults as NSArray
         } catch {
             print("Error with request: \(error)")
         }
@@ -41,7 +41,7 @@ extension Entity {
         return []
     }
     
-    public class func saveContext(saveText : String) -> String {
+    public class func saveData(saveText : String) -> String {
         
         // Save Core Data
         let context = Entity.getContext()
@@ -54,6 +54,20 @@ extension Entity {
         do {
             //save data
             try context.save()
+            return "success"
+        }catch let error as NSError {
+            print ("faild! \(error.localizedFailureReason)")
+            return "failed"
+        }
+    }
+    
+    public class func updateData(record: AnyObject ,updateData : String) -> String {
+        
+        record.setValue(updateData, forKey: "attr1")
+
+        do {
+            // Save Record
+            try record.managedObjectContext?.save()
             return "success"
         }catch let error as NSError {
             print ("faild! \(error.localizedFailureReason)")

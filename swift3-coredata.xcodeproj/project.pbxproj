@@ -17,6 +17,7 @@
 		100CEF9A1DB34CE1000E8656 /* swift3_coredataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CEF991DB34CE1000E8656 /* swift3_coredataUITests.swift */; };
 		100CEFAD1DB34E06000E8656 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */; };
 		100CEFAE1DB34E06000E8656 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */; };
+		1021F9B11DBA101600E4C768 /* ManagedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1021F9B01DBA101600E4C768 /* ManagedParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		100CEF9B1DB34CE1000E8656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1021F9B01DBA101600E4C768 /* ManagedParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		100CEF6A1DB34CE1000E8656 = {
 			isa = PBXGroup;
 			children = (
+				1021F9B01DBA101600E4C768 /* ManagedParser.swift */,
 				100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */,
 				100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */,
 				100CEF751DB34CE1000E8656 /* swift3-coredata */,
@@ -272,6 +275,7 @@
 				100CEF791DB34CE1000E8656 /* ViewController.swift in Sources */,
 				100CEF7F1DB34CE1000E8656 /* swift3_coredata.xcdatamodeld in Sources */,
 				100CEFAD1DB34E06000E8656 /* Entity+CoreDataClass.swift in Sources */,
+				1021F9B11DBA101600E4C768 /* ManagedParser.swift in Sources */,
 				100CEF771DB34CE1000E8656 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +519,7 @@
 				100CEFA01DB34CE1000E8656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		100CEFA11DB34CE1000E8656 /* Build configuration list for PBXNativeTarget "swift3-coredataTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +528,7 @@
 				100CEFA31DB34CE1000E8656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		100CEFA41DB34CE1000E8656 /* Build configuration list for PBXNativeTarget "swift3-coredataUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +537,7 @@
 				100CEFA61DB34CE1000E8656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
