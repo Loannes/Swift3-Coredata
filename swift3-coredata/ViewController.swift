@@ -16,15 +16,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableview: UITableView!
     
     @IBAction func alertTextField(_ sender: AnyObject) {
-        //1. Create the alert controller.
+
         let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
         
-        //2. Add the text field. You can configure it however you need.
         alert.addTextField { (textField) in
             textField.placeholder = "Some default text."
         }
-        
-        // 3. Grab the value from the text field, and print it when the user clicks OK.
+
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
             
             // Check TextField Value : if value is nil, return
@@ -40,7 +38,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
         }))
         
-        // 4. Present the alert.
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel))
+        
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -57,12 +56,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 
     // MARK: - TableView Delegate
-    // 테이블 행수 얻기 (tableView 구현 필수)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fetchData.count
     }
-    
-    // 셀 내용 변경하기 (tableView 구현 필수)
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let record = fetchData.object(at: indexPath.row)
         
@@ -78,23 +75,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let indexPath = tableView.indexPathForSelectedRow {
-            // Fetch Record
+
             let record = fetchData.object(at: indexPath.row)
             
-            //1. Create the alert controller.
             let alert = UIAlertController(title: "edit Title", message: "edit a text", preferredStyle: .alert)
             
-            //2. Add the text field. You can configure it however you need.
             alert.addTextField { (textField) in
                 if let attr = (record as AnyObject).value(forKey: "attr1") as? String {
                     textField.text = attr
                 }
             }
-            
-            // 3. Grab the value from the text field, and print it when the user clicks OK.
+
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
-                
-                // Check TextField Value : if value is nil, return
+
                 guard let text = alert.textFields![0].text, alert.textFields![0].text != "" else {
                     return
                 }
@@ -104,10 +97,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     self.fetchData = Entity.fetchedData()
                     self.tableview.reloadData()
                 }
-                
+
             }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel))
             
-            // 4. Present the alert.
             self.present(alert, animated: true, completion: nil)
         }
         
