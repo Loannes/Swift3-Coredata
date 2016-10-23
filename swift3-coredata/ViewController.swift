@@ -11,7 +11,7 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var fetchData : NSArray = Entity.fetchedData()
+    var fetchData : NSArray = AICoreData.fetchedData()
 
     @IBOutlet weak var tableview: UITableView!
     
@@ -30,9 +30,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 return
             }
             
-            let proc = Entity.saveData(saveText: text)
+            let proc = AICoreData.saveData(saveText: text)
             if proc == "success" {
-                self.fetchData = Entity.fetchedData()
+                self.fetchData = AICoreData.fetchedData()
                 self.tableview.reloadData()
             }
             
@@ -92,9 +92,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     return
                 }
                 
-                let proc = Entity.updateData(record: record as AnyObject, updateData: text)
+                let proc = AICoreData.updateData(record: record as AnyObject, updateData: text)
                 if proc == "success" {
-                    self.fetchData = Entity.fetchedData()
+                    self.fetchData = AICoreData.fetchedData()
                     self.tableview.reloadData()
                 }
 

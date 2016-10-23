@@ -18,6 +18,7 @@
 		100CEFAD1DB34E06000E8656 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */; };
 		100CEFAE1DB34E06000E8656 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */; };
 		1021F9B11DBA101600E4C768 /* ManagedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1021F9B01DBA101600E4C768 /* ManagedParser.swift */; };
+		10E217A21DBC8D2E00508E39 /* AICoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E217A11DBC8D2E00508E39 /* AICoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1021F9B01DBA101600E4C768 /* ManagedParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedParser.swift; sourceTree = "<group>"; };
+		10E217A11DBC8D2E00508E39 /* AICoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AICoreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				1021F9B01DBA101600E4C768 /* ManagedParser.swift */,
 				100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */,
 				100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */,
+				10E217A11DBC8D2E00508E39 /* AICoreData.swift */,
 				100CEF751DB34CE1000E8656 /* swift3-coredata */,
 				100CEF8D1DB34CE1000E8656 /* swift3-coredataTests */,
 				100CEF981DB34CE1000E8656 /* swift3-coredataUITests */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				100CEFAE1DB34E06000E8656 /* Entity+CoreDataProperties.swift in Sources */,
+				10E217A21DBC8D2E00508E39 /* AICoreData.swift in Sources */,
 				100CEF791DB34CE1000E8656 /* ViewController.swift in Sources */,
 				100CEF7F1DB34CE1000E8656 /* swift3_coredata.xcdatamodeld in Sources */,
 				100CEFAD1DB34E06000E8656 /* Entity+CoreDataClass.swift in Sources */,
