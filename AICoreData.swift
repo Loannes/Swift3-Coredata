@@ -41,6 +41,7 @@ class AICoreData {
         
         //set the entity values
         transc.setValue( saveText, forKey: "attr1")
+        transc.setValue(Int(arc4random_uniform(20)), forKey: "attr2")
         
         do {
             //save data
@@ -53,8 +54,8 @@ class AICoreData {
     }
 
     public class func updateData(record: AnyObject ,updateData : String) -> String {
-
         record.setValue(updateData, forKey: "attr1")
+        record.setValue(Int(arc4random_uniform(20)), forKey: "attr2")
 
         do {
             // Save Record

@@ -2,13 +2,13 @@
 //  Entity+CoreDataProperties.swift
 //  swift3-coredata
 //
-//  Created by Loannes on 2016. 10. 16..
+//  Created by Loannes on 2016. 10. 23..
 //  Copyright © 2016년 Loannes. All rights reserved.
 //
 
 import Foundation
-import UIKit
 import CoreData
+
 
 extension Entity {
 
@@ -17,4 +17,5 @@ extension Entity {
     }
 
     @NSManaged public var attr1: String?
+    @NSManaged public var attr2: Int16
 }

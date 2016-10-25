@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -62,11 +62,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let record = fetchData.object(at: indexPath.row)
-        
+
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
 
         if let attr = (record as AnyObject).value(forKey: "attr1") as? String {
             cell.textLabel?.text = attr
+        }
+        print(record)
+        if let attr2 = (record as AnyObject).value(forKey: "attr2") as? Int {
+            cell.detailTextLabel?.text = "\(attr2)"
         }
         
         return cell
