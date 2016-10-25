@@ -18,6 +18,7 @@
 		100CEFAD1DB34E06000E8656 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */; };
 		100CEFAE1DB34E06000E8656 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */; };
 		1021F9B11DBA101600E4C768 /* ManagedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1021F9B01DBA101600E4C768 /* ManagedParser.swift */; };
+		10E217A21DBC8D2E00508E39 /* AICoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E217A11DBC8D2E00508E39 /* AICoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1021F9B01DBA101600E4C768 /* ManagedParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedParser.swift; sourceTree = "<group>"; };
+		10E217A11DBC8D2E00508E39 /* AICoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AICoreData.swift; sourceTree = "<group>"; };
+		10E217A31DBC91C500508E39 /* swift3_coredata2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swift3_coredata2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		100CEF6A1DB34CE1000E8656 = {
 			isa = PBXGroup;
 			children = (
+				10E217A11DBC8D2E00508E39 /* AICoreData.swift */,
 				1021F9B01DBA101600E4C768 /* ManagedParser.swift */,
 				100CEFAB1DB34E06000E8656 /* Entity+CoreDataClass.swift */,
 				100CEFAC1DB34E06000E8656 /* Entity+CoreDataProperties.swift */,
@@ -272,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				100CEFAE1DB34E06000E8656 /* Entity+CoreDataProperties.swift in Sources */,
+				10E217A21DBC8D2E00508E39 /* AICoreData.swift in Sources */,
 				100CEF791DB34CE1000E8656 /* ViewController.swift in Sources */,
 				100CEF7F1DB34CE1000E8656 /* swift3_coredata.xcdatamodeld in Sources */,
 				100CEFAD1DB34E06000E8656 /* Entity+CoreDataClass.swift in Sources */,
@@ -545,9 +550,10 @@
 		100CEF7D1DB34CE1000E8656 /* swift3_coredata.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				10E217A31DBC91C500508E39 /* swift3_coredata2.xcdatamodel */,
 				100CEF7E1DB34CE1000E8656 /* swift3_coredata.xcdatamodel */,
 			);
-			currentVersion = 100CEF7E1DB34CE1000E8656 /* swift3_coredata.xcdatamodel */;
+			currentVersion = 10E217A31DBC91C500508E39 /* swift3_coredata2.xcdatamodel */;
 			path = swift3_coredata.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
